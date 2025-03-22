@@ -45,10 +45,19 @@ cursor: pointer;
     margin-right: 8px;
 }
 
-.categorias{
+.categorias_lista {
     padding: 40px;
     width: 100%;
     display: grid;
+    align-items: center;
+    margin: auto;
+}
+
+.categorias {
+    display: flex;
+  justify-content: center;
+    padding: 40px;
+    width: 100%;
     align-items: center;
     margin: auto;
 }
@@ -58,7 +67,7 @@ cursor: pointer;
     font-size: x-large;
 }
 
-.categoria{
+.categoria {
     margin: 10px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.473);
@@ -72,6 +81,12 @@ cursor: pointer;
 .categoria_detalle{
     display: flex;
     width: 40%;
+
+    img {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+    }
 }
 
 .categoria:visited {
