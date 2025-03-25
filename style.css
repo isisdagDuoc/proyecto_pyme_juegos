@@ -98,3 +98,16 @@ cursor: pointer;
     height: 40%;
     border-radius: 10px;
 }
+
+.error-message {
+    font-size: 14px;
+    display: none;
+}
+
+.is-invalid{
+    border: red solid 2px;
+}
+ 
+input{
+    outline: none
+}
