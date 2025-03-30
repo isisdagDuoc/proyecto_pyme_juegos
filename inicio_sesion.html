@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Iniciar Sesión</title>
+
+</head>
+<body>
+    <form id="incio_sesion"> 
+        <h2>Bienvenido, si es tu primera vez <a href="formulario.html">Registrate aquí</a></h2>
+
+        <label for="correo_inicio_sesion">Correo</label>
+        <input type="email" name="correo_inicio_sesion" id="correo_inicio_sesion" class="form-control">
+
+        <label for="contraseña_iniciar_sesion">Contraseña</label>
+        <input type="password" name="contraseña_iniciar_sesion" id="contraseña_iniciar_sesion" class="form-control">
+
+        <p class="error-message"></p>
+
+        <button type="submit">Ingresar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>  
+</body>
+</html>
