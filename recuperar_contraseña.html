@@ -14,18 +14,21 @@
         
         <h2 class="text-light">¿Olvidaste tu contraseña?</h2>
 
-        <label for="nombre_usuario" class="form-label text-light">Nombre de usuario</label>
-        <input type="text" name="nombre_usuario" id="usuario" class="form-control">
+        <label for="correo" class="form-label text-light">Correo</label>
+        <input type="email" name="correo" id="correo" class="form-control">
 
-        <label for="correo_rec_contraseña" class="form-label text-light">Correo</label>
-        <input type="email" name="correo_rec_contraseña" id="correo_rec_contraseña" class="form-control">
-        
-        <p class="error-message"></p>
+        <label for="correo_rec_contraseña" class="form-label text-light">Contraseña</label>
+        <input type="password" name="correo_rec_contraseña" id="contraseña" class="form-control">
+
+        <div id="miAlerta" class="alert alert-success d-none" role="alert">
+        </div>
+
+        <p class="error-message text-light"></p>
 
         <button type="submit"  class="btn-iniciar-sesion">Enviar</button>
+        <a href="index.html" class="btn-iniciar-sesion btn btn-secondary mt-3 w-100">Ir al inicio</a>
         </div>
     </form>
-    <a href="index.html" class="categoria">Ir al inicio</a>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="main.js"></script>  
