@@ -165,9 +165,11 @@ cursor: pointer;
 }
 
 .contenedor-categoria{
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 .categoria_img {
     width: 40%;

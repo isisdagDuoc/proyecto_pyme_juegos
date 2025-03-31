@@ -144,8 +144,6 @@ function () {
 
     // FORMULARIO INICIO SESION
     $("#formulario_inicio_sesion").submit(function (event) {
-        console.log(event)
-        console.log($("#correo").val())
 
         event.preventDefault()
 
@@ -175,6 +173,47 @@ function () {
             $("#miAlerta")
             .removeClass("d-none")
             .addClass("alert-success")
+        }
+    })
+
+    // Recuperar contraseña
+    $("#recuperar_contraseña").submit(function (event) {
+
+        event.preventDefault()
+        console.log(event)
+
+        $(".error-message").hide(); 
+        $(".form-control").removeClass("is-invalid"); 
+
+        let isValid = true;
+        const correo = $("#correo").val().trim();
+
+        console.log(correo)
+        console.log($("#contraseña").val())
+
+
+    
+       //valida que el input de correo no quede vacio
+        if (correo === "") {
+            correo.addClass("is-invalid");
+            $(".error-message").text("Ingresa tu correo").show();
+            isValid = false;
+        }
+
+    
+        //valida que el input de contraseña no quede vacio
+        if ($("#contraseña").val().trim() === "") {
+            $("#contraseña").addClass("is-invalid");
+    
+            $(".error-message").text("Ingresa tu contraseña").show();
+            isValid = false;
+        }
+
+        if (isValid) {
+            $("#miAlerta")
+            .removeClass("d-none")
+            .addClass("alert-success")
+            .text(`Recuperación exitosa. Se ha enviado un correo a: ${correo}`);
         }
     })
 
