@@ -197,6 +197,18 @@ input{
     outline: none
 }
 
+/**********PASOS FINALES*******************/
+
+.titulo_compra{
+    color: white;
+    margin-top: 50px;
+}
+.compra_exitosa{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*************RESPONSIVE***********/
 
